@@ -224,7 +224,8 @@ async function openArticle(art) {
   document.body.style.overflow = 'hidden';
 
   try {
-    const res = await fetch(`${BASE}/articulos/${art.archivo}`);
+    const url = `${window.location.origin}${BASE}/articulos/${art.archivo}`;
+    const res = await fetch(url);
     if (!res.ok) throw new Error();
     const raw = await res.text();
     const body = stripFrontmatter(raw);
