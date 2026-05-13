@@ -1,8 +1,15 @@
 /* === NORVIA — APP.JS === */
 
-const BASE = window.location.pathname.includes('github.io')
-  ? '/' + window.location.pathname.split('/')[1]
-  : '';
+const BASE = (() => {
+  const parts = window.location.pathname.split('/').filter(Boolean);
+  if (window.location.hostname.includes('github.io') && parts.length > 0) {
+    return '/' + parts[0];
+  }
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && parts.length > 0) {
+    return '/' + parts[0];
+  }
+  return '';
+})();
 
 let allArticles = [];
 let activeFilter = 'all';
