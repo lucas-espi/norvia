@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Norvia — Análisis Jurídico</title>
+  <meta name="description" content="Análisis y doctrina jurídica sobre Derecho Ambiental, Constitucional Económico e Inteligencia Artificial aplicada al Derecho." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="nav-header" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-mark">N</span>
+        <span class="logo-text">Norvia</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#areas">Áreas</a>
+        <a href="#articulos">Artículos</a>
+        <a href="#autor">Autor</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="nav-burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Doctrina · Análisis · Debate Jurídico</p>
+      <h1 class="hero-title">
+        El derecho como<br/>
+        <em>instrumento vivo</em>
+      </h1>
+      <p class="hero-sub">Análisis riguroso sobre las fronteras del derecho constitucional, ambiental y los nuevos desafíos que plantea la era digital.</p>
+      <div class="hero-actions">
+        <a href="#articulos" class="btn-primary">Leer artículos</a>
+        <a href="#areas" class="btn-ghost">Ver áreas temáticas</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Desplazá para explorar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="latest-section" id="ultimo">
+    <div class="container">
+      <div class="section-label">Último artículo publicado</div>
+      <div class="latest-card" id="latestCard">
+        <div class="latest-card-loader">Cargando…</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="areas-section" id="areas">
+    <div class="container">
+      <div class="section-label">Áreas temáticas</div>
+      <h2 class="section-title">Campos de análisis</h2>
+      <div class="areas-grid" id="areasGrid">
+        <div class="area-card" data-cat="Derecho al Ambiente">
+          <div class="area-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12m0 0C10 9 6 8 3 10c0 5 4 9 9 9m0-9c2-3 6-4 9-2-1 5-5 8-9 8"/></svg>
+          </div>
+          <h3>Derecho al Ambiente</h3>
+          <p>Normativa ambiental, jurisprudencia sobre el artículo 41 CN y derecho internacional del medio ambiente.</p>
+          <span class="area-count" data-cat="Derecho al Ambiente">— artículos</span>
+        </div>
+        <div class="area-card" data-cat="Derecho Constitucional Económico">
+          <div class="area-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/><path d="M7 10h2m4 0h2M7 13h4"/></svg>
+          </div>
+          <h3>Derecho Constitucional Económico</h3>
+          <p>Orden económico constitucional, libertad de empresa, intervención estatal y derechos del consumidor.</p>
+          <span class="area-count" data-cat="Derecho Constitucional Económico">— artículos</span>
+        </div>
+        <div class="area-card" data-cat="IA en el Derecho">
+          <div class="area-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a7 7 0 0 1-7 7H9a7 7 0 0 1-7-7H1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="9" cy="14" r="1" fill="currentColor"/><circle cx="15" cy="14" r="1" fill="currentColor"/></svg>
+          </div>
+          <h3>IA en el Derecho</h3>
+          <p>Regulación de algoritmos, responsabilidad por sistemas autónomos y transformación digital de la práctica jurídica.</p>
+          <span class="area-count" data-cat="IA en el Derecho">— artículos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="articulos-section" id="articulos">
+    <div class="container">
+      <div class="articulos-header">
+        <div>
+          <div class="section-label">Publicaciones</div>
+          <h2 class="section-title">Todos los artículos</h2>
+        </div>
+        <div class="search-wrap">
+          <div class="search-box">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="searchInput" placeholder="Buscar por tema, palabra clave…" autocomplete="off" />
+            <button class="search-clear" id="searchClear" aria-label="Limpiar">✕</button>
+          </div>
+        </div>
+      </div>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="Derecho al Ambiente">Derecho al Ambiente</button>
+        <button class="filter-btn" data-filter="Derecho Constitucional Económico">Const. Económico</button>
+        <button class="filter-btn" data-filter="IA en el Derecho">IA en el Derecho</button>
+      </div>
+      <div class="articulos-grid" id="articulosGrid">
+        <p class="loading-msg">Cargando artículos…</p>
+      </div>
+      <p class="no-results" id="noResults" style="display:none">No se encontraron artículos con esa búsqueda.</p>
+    </div>
+  </section>
+
+  <section class="autor-section" id="autor">
+    <div class="container">
+      <div class="autor-inner">
+        <div class="autor-photo">
+          <div class="autor-initials">LA</div>
+        </div>
+        <div class="autor-bio">
+          <div class="section-label">Sobre el autor</div>
+          <h2 class="autor-name">Lucas Are</h2>
+          <p class="autor-text">Abogado especializado en derecho constitucional y ambiental. Este espacio nació como un proyecto de divulgación jurídica rigurosa: para que el derecho sea accesible sin dejar de ser preciso.</p>
+          <p class="autor-text">Creo que el análisis jurídico de calidad no debe quedar encerrado en las aulas ni en los expedientes. Norvia es mi forma de contribuir al debate público desde el derecho.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto-section" id="contacto">
+    <div class="container">
+      <div class="contacto-inner">
+        <div class="contacto-info">
+          <div class="section-label">Contacto</div>
+          <h2 class="section-title">¿Tenés una consulta<br/>o propuesta?</h2>
+          <p>Podés escribirme por cualquier tema relacionado con los artículos, consultas académicas o colaboraciones.</p>
+        </div>
+        <form class="contacto-form" id="contactForm" action="https://formspree.io/f/lucasare94@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué querés escribir?" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje…" required></textarea>
+          </div>
+          <input type="hidden" name="_replyto" value="lucasare94@gmail.com" />
+          <button type="submit" class="btn-primary form-submit">Enviar mensaje</button>
+          <p class="form-ok" id="formOk" style="display:none">✓ Mensaje enviado. ¡Gracias!</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-mark small">N</span>
+          <span class="logo-text">Norvia</span>
+        </div>
+        <p class="footer-tagline">Análisis jurídico riguroso y accesible.</p>
+        <p class="footer-copy">© <span id="year"></span> Lucas Are · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
